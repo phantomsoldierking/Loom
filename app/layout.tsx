@@ -5,6 +5,10 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster"
 
+import '@stream-io/video-react-sdk/dist/css/styles.css';
+import "react-datepicker/dist/react-datepicker.css";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +21,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Loom",
+  title: "Yoom",
   description: "by phantomsoldierking",
+  icons: {
+    icon: '/icons/logo.svg',
+  }
 };
 
 export default function RootLayout({
