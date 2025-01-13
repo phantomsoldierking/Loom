@@ -48,7 +48,7 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
 
       const recordings = callData
         .filter((call) => call.recordings.length > 0)
-        .flatMap((call) => call.recordings);
+        .flatMap((call) => call.recordings);    // multiple recording in a single call is converted into recordings array
 
       setRecordings(recordings);
     };
